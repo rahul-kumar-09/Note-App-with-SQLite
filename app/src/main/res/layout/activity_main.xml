@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/notesHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Notes"
         android:textColor="@color/orange"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -22,18 +23,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/notesHeading"
-        android:padding="16dp"/>
+        android:padding="2dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/addButton"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/orange"
         android:src="@drawable/baseline_add_24"
-        android:tint="@color/white"
-        android:backgroundTint="@color/orange" />
+        android:tint="@color/white" />
 
 </RelativeLayout>

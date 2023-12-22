@@ -10,25 +10,39 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/border_corner"
         android:orientation="vertical"
         android:padding="16dp">
 
-
-        <TextView
-            android:id="@+id/titleTextView"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/orange"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:text="Title" />
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@color/orange"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/updateButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_edit_24" />
+
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/contentTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="Content" />
+            android:text="Content"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
