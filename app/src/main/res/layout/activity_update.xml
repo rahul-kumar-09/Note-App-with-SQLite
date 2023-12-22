@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="15dp"
+    android:background="@color/white"
     tools:context=".UpdateActivity">
 
 
@@ -33,6 +34,7 @@
         android:hint="Enter the title"
         android:padding="12dp"
         android:textSize="20sp"
+        android:textColor="@color/black"
         android:layout_below="@id/editNoteHeading"
         android:background="@drawable/border_corner"
         android:layout_marginTop="10dp"

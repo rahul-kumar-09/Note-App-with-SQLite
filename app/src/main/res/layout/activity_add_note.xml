@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="15dp"
+    android:background="@color/white"
     tools:context=".AddNoteActivity">
 
 
@@ -32,6 +33,9 @@
         android:layout_height="60dp"
         android:hint="Enter the title"
         android:padding="12dp"
+        android:textStyle="bold"
+        android:textColorHint="#939191"
+        android:textColor="@color/orange"
         android:textSize="20sp"
         android:layout_below="@id/addNoteHeading"
         android:background="@drawable/border_corner"
@@ -45,6 +49,8 @@
         android:hint="Enter the description"
         android:gravity="top"
         android:padding="12dp"
+        android:textColorHint="#939191"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:layout_below="@id/titleEditText"
         android:background="@drawable/border_corner"
