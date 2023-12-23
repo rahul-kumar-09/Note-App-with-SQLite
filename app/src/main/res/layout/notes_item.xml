@@ -25,27 +25,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Title"
+                android:layout_marginRight="26dp"
                 android:textColor="@color/orange"
                 android:textSize="22sp"
                 android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/contentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Content"
+                android:layout_marginRight="26dp"
+                android:layout_below="@id/titleTextView"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
 
             <ImageView
                 android:id="@+id/updateButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/baseline_edit_24" />
+                android:layout_alignParentRight="true"
+                android:src="@drawable/baseline_edit_24"
+                android:layout_marginBottom="5dp"/>
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/updateButton"
+                android:src="@drawable/baseline_delete_24" />
 
         </RelativeLayout>
-
-        <TextView
-            android:id="@+id/contentTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="Content"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
 
     </LinearLayout>
 
